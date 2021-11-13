@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textField4: UITextField!
     @IBOutlet weak var textField5: UITextField!
     
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var resultLabel: UILabel!
     
     @IBAction func addButton(_ sender: Any) {
         let number1 = Int(textField1.text ?? "") ?? 0
@@ -24,9 +24,9 @@ class ViewController: UIViewController {
         let number4 = Int(textField4.text ?? "") ?? 0
         let number5 = Int(textField5.text ?? "") ?? 0
 
-        let result = number1 + number2 + number3 + number4 + number5
+        let total = number1 + number2 + number3 + number4 + number5
         
-        label.text = "\(result)"
+        resultLabel.text = "\(total)"
     }
     
     override func viewDidLoad() {
